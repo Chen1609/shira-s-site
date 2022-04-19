@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html dir ="rtl">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
    <div class="topnav">
-  <a class="active" href="#about">About me</a>
-  <a href="#photos">My Photos</a>
-  <a href="#playlist">My Playlist</a>
-  <a href="#like">Like</a>
-  <a href="#qrcoder">QR code</a>
+  <a class="active" href="#about">קצת עליי</a>
+  <a href="#photos">תמונות שלי</a>
+  <a href="#playlist">שיר שאני אוהב</a>
+  <a href="#like">תנו בלייק</a>
+  <a href="#qrcoder">סרקו אותי!</a>
   <a href="#spa">Q&A</a>
-  <a href="#contact">Contact Me</a>
+  <a href="#contact">צרו קשר</a>
 </div>
 		  
 <section id="about" class="section">
@@ -31,7 +31,7 @@
 <br/>
 <br/>
 <h1>
-About Me:
+קצת עליי:
 </h1>
 <p>
   אלמן כבר עשור, אבא ל-3 ילדים וסבא ל- 5 נכדים מקסימים. חקלאי ממושב בקעות. אוהב טיולים בארץ ובחו"ל, תיאטרון, אוכל ביתי נהנה ממסעדה טובה. מתרגש מזריחות ושקיעות, פריחות, נופים ואתרים מיוחדים.
@@ -58,7 +58,7 @@ About Me:
 <br/>
 <br/>
 <h1>
-my photos
+תמונות שלי
 </h1>
 <br/>
 <img src="src/selfie.jpeg" width="300" height="300"/>
@@ -83,7 +83,7 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+שיר שאני אוהב:
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VqhCQZaH4Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
@@ -107,7 +107,7 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+תנו בלייק
 <br/>
 <br/>
 <br/>
@@ -130,7 +130,7 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+סרקו אותי!
 <br/>
 <img src="src/qr.png" width="300" height="300"/>
 <br/>
@@ -177,20 +177,21 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+צרו קשר:
 <br/>
 <br/>
 <div class="container">
   <form action="action_page.php">
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <label for="fname">שם פרטי</label>
+  <input type="text" id="fname" name="firstname" placeholder="השם שלך...">
 
-  <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      <label for="user_email">E-mail:</label>
+  <label for="lname">שם משפחה</label>
+  <input type="text" id="lname" name="lastname" placeholder="שם המשפחה שלך...">
+      <label for="user_email">אימייל:</label>
       <input type="email" id="user_email" name="user_email" />
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <br/>
+      <label for="subject">נושא:</label>
+      <textarea id="subject" name="subject" placeholder="כתוב/י משהו..." style="height:200px"></textarea>
       <label for="emoji">Add Emoji:</label>
       <select onchange="addEmoji()" id="user_emoji">
         <option id="0" value="">No emoji!</option>
