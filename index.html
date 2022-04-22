@@ -2,8 +2,22 @@
 <html dir ="rtl">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  .fit { /* set relative picture size */
+      max-width: 25%;
+      max-height: 25%;
+  }
+  .center {
+      display: block;
+      margin: auto;
+  }
+</style>
 </head>
-<body style="background-color:#333;">
+<body>
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="6tZncB95"></script>
    <div class="topnav">
@@ -40,7 +54,17 @@
 </h1>
 <br/>
 <br/>
-  <img src="src/selfie.jpeg" width="300" height="300"/>
+  <img class="center fit" src="src/selfie.jpeg"/>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" language="JavaScript">
+    function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+    });
+</script>
 <br/>
 <br/>
 </section>
@@ -95,7 +119,7 @@
 <br/>
 <br/>
 <div class="container">
-  <form action="mailto:myforms@mydomain.com?subject=myform_submission" onsubmit="location.href='thanks.html';">
+  <form action="mailto:kolelyh@post.bgu.ac.il?subject=myform_submission">
   <label for="name" style="color:aliceblue;">שם: </label>
   <input type="text" id="name" name="name" style="color:aliceblue;" placeholder="השם שלך...">
   <label for="user_email" style="color:aliceblue;">אימייל:</label>
@@ -103,6 +127,8 @@
       <br/>
       <label for="subject" style="color:aliceblue;">נושא:</label>
       <textarea id="subject" name="subject" style="color:aliceblue;" placeholder="כתוב/י משהו..." style="height:200px"></textarea>
+      <label for="content" style="color:aliceblue;">תוכן:</label>
+      <textarea id="content" name="content" style="color:aliceblue;" placeholder="כתוב/י משהו..." style="height:200px"></textarea>
       <label for="emoji" style="color:aliceblue;">אימוג'ים:</label>
       <divclass="container">
         <textarea class="text"></textarea>
