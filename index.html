@@ -34,8 +34,6 @@
     <a href="#contact">צרו קשר</a>
     </div>
 </div>
-<br/>
-<br/>	  
 <section id="about" class="section">
 <br/>
 <br/>
@@ -43,28 +41,24 @@
 <br/>
 <br/>
 <br/>
-<h1 style="color:white;font-size:200%;">
-קצת עליי:
+<h1 class="decorated" style="color:white;font-size:200%;">
+<span>קצת עליי:</span>
 </h1>
+<br/>
 <p style="color:white;font-size:150%;">
   קוראים לי פנחס סיאני ואני בן 72. אני אלמן כבר עשור, אבא ל-3 ילדים וסבא ל- 5 נכדים מקסימים. חקלאי ממושב בקעות. אוהב טיולים בארץ ובחו"ל, תיאטרון, אוכל ביתי נהנה ממסעדה טובה. מתרגש מזריחות ושקיעות, פריחות, נופים ואתרים מיוחדים.
 </p>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="photos" class="section">
-  <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<h1 style="color:white;font-size:200%;">
-    תמונות שלי
+<h1 class="decorated" style="color:white;font-size:200%;">
+    <span>תמונות שלי</span>
 </h1>
-<br/>
 <br/>
   <img class="center fit" src="src/selfie.jpeg"/>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -82,12 +76,11 @@
 </section>
 <div class="center">
 <section id="playlist" >
-<h1 style="color:white;font-size:200%;">
+<h1 class="decorated" style="color:white;font-size:200%;">
   <br/>
 <br/>
 <br/>
-<br/>
-שיר שאני אוהב:
+<span>שיר שאני אוהב:</span>
 </h1>
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VqhCQZaH4Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -101,8 +94,8 @@
 <br/>
 <br/>
 <br/>
-  <h1 style="color:white;font-size:200%;">
-    תנו בלייק
+  <h1 class="decorated" style="color:white;font-size:200%;">
+    <span>תנו בלייק</span>
   </h1>
   <br/>
   <br/>
@@ -117,8 +110,8 @@
   <br/>
   <br/>
   <br/>
-<h1 style="color:white;font-size:200%;">
-  סרקו אותי!
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <span>סרקו אותי!</span>
 </h1>
 <br/>
 <img src="src/qr.png" width="300" height="300"/>
@@ -133,8 +126,8 @@
   <br/>
   <br/>
   <br/>
-<h1 style="color:white;font-size:200%;">
-  ans
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <span>ans</span>
 </h1>
 <br/>
 <br/>
@@ -149,14 +142,15 @@
   <br/>
   <br/>
   <br/>
-<h1 style="color:white;font-size:200%;">
-  צרו קשר:
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <span>צרו קשר:</span>
 </h1>
 <br/>
 <br/>
 <div class="container">
   <form target="_blank" action="https://formsubmit.co/kolelyh@post.bgu.ac.il" method="POST">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://web-development-environments-2022.github.io/assignment1-Chen1609/">
     <div class="form-group">
       <div class="form-row">
         <div class="col">
@@ -164,23 +158,24 @@
           <input type="text" name="name" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
         </div>
         <div class="col">
-          <p><label for="name" style="color:aliceblue;">אימייל:</label></p>
+          <p><label for="email" style="color:aliceblue;">אימייל:</label></p>
           <input type="email" name="email" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
+          <p><label for="email" style="color:aliceblue;">נושא:</label></p>
+          <input type="text" name="_subject" style="color:aliceblue;" placeholder="כתוב/י משהו...">
         </div>
       </div>
     </div>
     <div class="form-group">
-      <p><label for="name" style="color:aliceblue;">תוכן:</label></p>
-      <textarea style="color:aliceblue;" placeholder="כתוב/י משהו..." class="form-control" name="message" rows="10" required></textarea>
-      <p><label for="name" style="color:aliceblue;">אימוג'ים:</label></p>  
-      <textarea class="text"></textarea>
+      <p><label for="message" style="color:aliceblue;">תוכן:</label></p>
+      <textarea style="color:aliceblue;" placeholder="כתוב/י משהו..." class="text" name="message" rows="10" required></textarea>
       <script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
       <script>
         var input = document.querySelector('.text');
         var picker = new EmojiButton({position: 'roght-start'})
         picker.on('emoji', function(emoji){input.value += emoji})
-        input.addEventListener('click', function(){picker.pickerVisible ? picker.hidePicker() : picker.showPicker(input)})
+        input.addEventListener('dblclick', function(){picker.pickerVisible ? picker.hidePicker() : picker.showPicker(input)})
         </script>
+        <p><label style="color:aliceblue;">*על מנת להוסיף אימוג'ים יש ללחוץ פעמיים על תיבת הטקסט</p>
     </div>
       <br/>
       <button type="submit" class="btn btn-lg btn-dark btn-block">שלח</button>

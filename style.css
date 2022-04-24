@@ -18,6 +18,7 @@ body {
   width: 100%;
   text-align: center;
   display:block;
+  z-index: 999;
 }
 
 /* Style the links inside the navigation bar */
@@ -92,3 +93,27 @@ input[type=submit]:hover {
   background-color: #454a4d;
   padding: 20px;
 } 
+.decorated{
+	overflow: hidden;
+	text-align: center;
+}
+.decorated > span{
+   position: relative;
+   display: inline-block;
+   font: 25px Arial, sans-serif;
+}
+.decorated > span:before, .decorated > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: 2px solid;
+   width: 591px; /* half of limiter*/
+   margin: 0 20px;
+   color: #00B8E6;
+}
+.decorated > span:before{
+   right: 100%;
+}
+.decorated > span:after{
+   left: 100%;
+}
