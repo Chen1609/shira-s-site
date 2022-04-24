@@ -3,6 +3,9 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <style>
+  h1 {text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif} 
+  p {text-align: right;}
+  section {text-align: center;}
   * {
       padding: 0;
       margin: 0;
@@ -17,7 +20,7 @@
   }
 </style>
 </head>
-<body>
+<body style="background-color:#232b32">
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="6tZncB95"></script>
    <div class="topnav">
@@ -32,9 +35,12 @@
     </div>
 </div>
 <br/>
-<br/><br/>
 <br/>	  
 <section id="about" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <h1 style="color:white;font-size:200%;">
@@ -49,6 +55,12 @@
 </section>
 
 <section id="photos" class="section">
+  <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <h1 style="color:white;font-size:200%;">
     תמונות שלי
 </h1>
@@ -68,9 +80,13 @@
 <br/>
 <br/>
 </section>
-
-<section id="playlist" class="section">
+<div class="center">
+<section id="playlist" >
 <h1 style="color:white;font-size:200%;">
+  <br/>
+<br/>
+<br/>
+<br/>
 שיר שאני אוהב:
 </h1>
 <br/>
@@ -79,19 +95,28 @@
 <br/>
 <br/>
 </section>
-
 <section id="like" class="section">
+  <br/>
+<br/>
+<br/>
+<br/>
+<br/>
   <h1 style="color:white;font-size:200%;">
-  תנו בלייק
+    תנו בלייק
   </h1>
-<br/>
-<br/>
-<br/>
-<div class="fb-like" data-href="https://he-il.facebook.com/photo/?fbid=140695289305640&amp;set=ecnf.100000955089873" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div><br/>
+  <br/>
+  <br/>
+  <br/>
+  <div class="fb-like" data-href="https://he-il.facebook.com/photo/?fbid=140695289305640&amp;set=ecnf.100000955089873" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div><br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 <h1 style="color:white;font-size:200%;">
   סרקו אותי!
 </h1>
@@ -101,7 +126,13 @@
 <br/>
 </section>
 
+</div>
 <section id="spa" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 <h1 style="color:white;font-size:200%;">
   ans
 </h1>
@@ -113,36 +144,47 @@
 </section>
 
 <section id="contact" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 <h1 style="color:white;font-size:200%;">
   צרו קשר:
 </h1>
 <br/>
 <br/>
 <div class="container">
-  <form action="mailto:kolelyh@post.bgu.ac.il?subject=myform_submission">
-  <label for="name" style="color:aliceblue;">שם: </label>
-  <input type="text" id="name" name="name" style="color:aliceblue;" placeholder="השם שלך...">
-  <label for="user_email" style="color:aliceblue;">אימייל:</label>
-      <input type="email" id="user_email" name="user_email" style="color:aliceblue;" placeholder="JohnSmith@gmail.com" />
-      <br/>
-      <label for="subject" style="color:aliceblue;">נושא:</label>
-      <textarea id="subject" name="subject" style="color:aliceblue;" placeholder="כתוב/י משהו..." style="height:200px"></textarea>
-      <label for="content" style="color:aliceblue;">תוכן:</label>
-      <textarea id="content" name="content" style="color:aliceblue;" placeholder="כתוב/י משהו..." style="height:200px"></textarea>
-      <label for="emoji" style="color:aliceblue;">אימוג'ים:</label>
-      <divclass="container">
-        <textarea class="text"></textarea>
+  <form target="_blank" action="https://formsubmit.co/kolelyh@post.bgu.ac.il" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <p><label for="name" style="color:aliceblue;">שם: </label></p>
+          <input type="text" name="name" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
+        </div>
+        <div class="col">
+          <p><label for="name" style="color:aliceblue;">אימייל:</label></p>
+          <input type="email" name="email" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
+        </div>
       </div>
+    </div>
+    <div class="form-group">
+      <p><label for="name" style="color:aliceblue;">תוכן:</label></p>
+      <textarea style="color:aliceblue;" placeholder="כתוב/י משהו..." class="form-control" name="message" rows="10" required></textarea>
+      <p><label for="name" style="color:aliceblue;">אימוג'ים:</label></p>  
+      <textarea class="text"></textarea>
       <script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
       <script>
         var input = document.querySelector('.text');
         var picker = new EmojiButton({position: 'roght-start'})
         picker.on('emoji', function(emoji){input.value += emoji})
         input.addEventListener('click', function(){picker.pickerVisible ? picker.hidePicker() : picker.showPicker(input)})
-      </script>
+        </script>
+    </div>
       <br/>
-      <input type="submit" value="שלח">
-</form>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">שלח</button>
+    </form>
 </div>
 <br/>
 </section>
@@ -163,3 +205,4 @@ $(function(){
  </script>
 </body>
 </html>
+

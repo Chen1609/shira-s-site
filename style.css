@@ -5,10 +5,14 @@
 	height: 35px;
 	background: white;
 }
+body {
+  
+  margin-bottom: 25%;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   position: fixed;
-  background-color: #333;
+  background-color: #152028;
   overflow: auto;
   top:0;
   width: 100%;
@@ -28,7 +32,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgb(27, 95, 117);
   color: black;
 }
 
@@ -38,6 +42,12 @@
   left: 0;
   transform:none;
 }
+iframe.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
  /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -62,7 +72,7 @@ input[type=email]{
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+button[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
