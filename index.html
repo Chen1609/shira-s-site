@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html dir ="rtl">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+  h1 {text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif} 
+  p {text-align: right;}
+  section {text-align: center;}
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  .fit { /* set relative picture size */
+      max-width: 25%;
+      max-height: 25%;
+  }
+  .center {
+      display: block;
+      margin: auto;
+  }
+</style>
+</head>
+<body style="background-color:#232b32">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="6tZncB95"></script>
+   <div class="topnav">
+     <div class="topnav-centered">
+    <a href="#about">קצת עליי</a>
+    <a href="#photos">תמונות שלי</a>
+    <a href="#playlist">שיר שאני אוהב</a>
+    <a href="#like">תנו בלייק</a>
+    <a href="#qrcoder">סרקו אותי!</a>
+    <a href="#spa">Q&A</a>
+    <a href="#contact">צרו קשר</a>
+    </div>
+</div>
+<section id="about" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 class="decorated" style="color:white;font-size:200%;">
+<span>קצת עליי:</span>
+</h1>
+<br/>
+<p style="color:white;font-size:150%;">
+  קוראים לי פנחס סיאני ואני בן 72. אני אלמן כבר עשור, אבא ל-3 ילדים וסבא ל- 5 נכדים מקסימים. חקלאי ממושב בקעות. אוהב טיולים בארץ ובחו"ל, תיאטרון, אוכל ביתי נהנה ממסעדה טובה. מתרגש מזריחות ושקיעות, פריחות, נופים ואתרים מיוחדים.
+</p>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1 class="decorated" style="color:white;font-size:200%;">
+    <span>תמונות שלי</span>
+</h1>
+<br/>
+  <img class="center fit" src="src/selfie.jpeg"/>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" language="JavaScript">
+    function set_body_height() { // set body height = window height
+        $('body').height($(window).height());
+    }
+    $(document).ready(function() {
+        $(window).bind('resize', set_body_height);
+        set_body_height();
+    });
+</script>
+<br/>
+<br/>
+</section>
+<div class="center">
+<section id="playlist" >
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <br/>
+<br/>
+<br/>
+<span>שיר שאני אוהב:</span>
+</h1>
+<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VqhCQZaH4Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+<br/>
+<br/>
+</section>
+<section id="like" class="section">
+  <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  <h1 class="decorated" style="color:white;font-size:200%;">
+    <span>תנו בלייק</span>
+  </h1>
+  <br/>
+  <br/><div class="like-content">
+  
+    <span>
+      Did you like this page? Press like to make it easier for others to see
+    </span>
+    
+    <button class="btn-secondary like-review">
+      <i class="fa fa-heart" aria-hidden="true"></i> Like
+    </button>
+    
+  </div>
+  <script>
+  $(function(){
+    $(document).one('click', '.like-review', function(e) {
+      $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
+      $(this).children('.fa-heart').addClass('animate-like');
+    });
+  });
+  </script>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <span>סרקו אותי!</span>
+</h1>
+<br/>
+<img src="src/qr.png" width="300" height="300"/>
+<br/>
+<br/>
+</section>
+
+</div>
+<section id="spa" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+<h1 class="decorated" style="color:white;font-size:200%;display:flow-root;">
+  <span>Q&A</span>
+</h1>
+<br/>
+<br/>
+<div id="intromessage">
+  <div style="float:left;clear:both;">
+    <img class="image1" src="src/diffarence table.png"/>
+  </div id="count">
+  <p style="color:white;font-size:150%;text-align: left;">
+    <U>Editing content:</U> B1 - Only the creator of the site has access to the content of the site and therefore without change from the creator himself, the site will look the same. For users of 2 and 3, such as YouTube, each time the site content is refreshed, the site will be different because the videos offered will be replaced.
+    <br/>
+    <br/>
+    <U>Interaction:</U> In 1 the user is only able to see the content of the site. In 2, we will take YouTube for example, a user can see videos and add a comment to the video. In the 3 videos, the user is personally recommended according to his way of watching. In addition the commercials on each video are also tailored according to what the user likes
+    <br/>
+    <br/>
+    <U>Access:</U> In 1 the user writes the link itself into the search. In 2 and 3 the user searches for the site by the name of the site only, the search engine will suggest the appropriate sites according to the method
+
+  </p>
+</div>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+<h1 class="decorated" style="color:white;font-size:200%;">
+  <span>צרו קשר:</span>
+</h1>
+<br/>
+<br/>
+<div class="container">
+  <form target="_blank" action="https://formsubmit.co/kolelyh@post.bgu.ac.il" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <p><label for="name" style="color:aliceblue;">שם: </label></p>
+          <input type="text" name="name" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
+        </div>
+        <div class="col">
+          <p><label for="email" style="color:aliceblue;">אימייל:</label></p>
+          <input type="email" name="email" class="form-control" style="color:aliceblue;" placeholder="כתוב/י משהו..." required>
+          <p><label for="email" style="color:aliceblue;">נושא:</label></p>
+          <input type="text" name="_subject" style="color:aliceblue;" placeholder="כתוב/י משהו...">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <p><label for="message" style="color:aliceblue;">תוכן:</label></p>
+      <textarea style="color:aliceblue;" placeholder="כתוב/י משהו..." class="text" name="message" rows="10" required></textarea>
+      <script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+      <script>
+        var input = document.querySelector('.text');
+        var picker = new EmojiButton({position: 'roght-start'})
+        picker.on('emoji', function(emoji){input.value += emoji})
+        input.addEventListener('dblclick', function(){picker.pickerVisible ? picker.hidePicker() : picker.showPicker(input)})
+        </script>
+        <p><label style="color:aliceblue;">*על מנת להוסיף אימוג'ים יש ללחוץ פעמיים על תיבת הטקסט</p>
+    </div>
+      <br/>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">שלח</button>
+    </form>
+</div>
+<br/>
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
+
