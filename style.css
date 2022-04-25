@@ -44,7 +44,23 @@ iframe.center {
   margin-left: auto;
   margin-right: auto;
 }
+#intromessage {
+  display: flex;
+}
 
+#cont {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.clearfix::after { 
+  content: ""; 
+  visibility: hidden; 
+  display: table; 
+  height: 0; 
+  clear: both;
+  overflow: auto;
+}
  /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -103,7 +119,7 @@ input[type=submit]:hover {
    position: absolute;
    top: 50%;
    border-bottom: 2px solid;
-   width: 591px; /* half of limiter*/
+   width: 1082px; /* half of limiter*/
    margin: 0 20px;
    color: #00B8E6;
 }
