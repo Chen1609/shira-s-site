@@ -2,9 +2,7 @@
 <html dir ="rtl">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-<script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
 <style>
   h1 {text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif} 
   p {text-align: right;}
@@ -101,25 +99,17 @@
     <span>תנו בלייק</span>
   </h1>
   <br/>
+  
   <br/><div class="like-content">
   
     <span>
       Did you like this page? Press like to make it easier for others to see
     </span>
-    
-    <button class="btn-secondary like-review">
-      <i class="fa fa-heart" aria-hidden="true"></i> Like
-    </button>
-    
-  </div>
-  <script>
-  $(function(){
-    $(document).one('click', '.like-review', function(e) {
-      $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
-      $(this).children('.fa-heart').addClass('animate-like');
-    });
-  });
-  </script>
+    </br>
+    <!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="drop" data-icon_l="thmb7-u" data-ef_voting="push" data-white_label="true" data-identifier="item_1" data-dislike_enabled="false" data-icon_dislike_show="false" data-counter_frmt="comma" data-popup_disabled="true" data-share_enabled="false" data-tooltip_enabled="false"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
 <br/>
 <br/>
 </section>

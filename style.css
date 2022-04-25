@@ -39,6 +39,23 @@
   left: 0;
   transform:none;
 }
+#likeB {
+	background: #fff;
+	border: unset;
+	outline: 0;
+	font-size: 18px;
+	cursor: pointer;
+	color: #65676b;
+	padding: 5px 10px;
+	}
+	#likeB.liked {
+	color: #0571ed;
+	}
+	#likeB.liked i{
+	animation: anim 0.5s ease-in-out;
+	-webkit-animation: anim 0.5s ease-in-out;
+	}
+	
 iframe.center {
   display: block;
   margin-left: auto;
