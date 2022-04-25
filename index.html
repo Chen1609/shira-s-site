@@ -98,9 +98,26 @@
     <span>תנו בלייק</span>
   </h1>
   <br/>
-  <br/>
-  <br/>
-  <div class="fb-like" data-href="https://he-il.facebook.com/photo/?fbid=140695289305640&amp;set=ecnf.100000955089873" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div><br/>
+  <br/><div class="like-content">
+  
+    <span>
+      Did you like this page? Press like to make it easier for others to see
+    </span>
+    
+    <button class="btn-secondary like-review">
+      <i class="fa fa-heart" aria-hidden="true"></i> Like
+    </button>
+    
+  </div>
+  <script>
+  $(function(){
+    $(document).one('click', '.like-review', function(e) {
+      $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
+      $(this).children('.fa-heart').addClass('animate-like');
+    });
+  });
+  </script>
+<br/>
 <br/>
 </section>
 
@@ -138,7 +155,9 @@
   <p style="color:white;font-size:150%;text-align: left;">
     <U>Editing content:</U> B1 - Only the creator of the site has access to the content of the site and therefore without change from the creator himself, the site will look the same. For users of 2 and 3, such as YouTube, each time the site content is refreshed, the site will be different because the videos offered will be replaced.
     <br/>
+    <br/>
     <U>Interaction:</U> In 1 the user is only able to see the content of the site. In 2, we will take YouTube for example, a user can see videos and add a comment to the video. In the 3 videos, the user is personally recommended according to his way of watching. In addition the commercials on each video are also tailored according to what the user likes
+    <br/>
     <br/>
     <U>Access:</U> In 1 the user writes the link itself into the search. In 2 and 3 the user searches for the site by the name of the site only, the search engine will suggest the appropriate sites according to the method
 
