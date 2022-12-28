@@ -182,7 +182,7 @@ input[type=submit]:hover {
    border-bottom: 2px solid;
    width: 1082px; /* half of limiter*/
    margin: 0 20px;
-   color: #00B8E6;
+   color: #f4c2c2;
 }
 .decorated > span:before{
    right: 100%;
