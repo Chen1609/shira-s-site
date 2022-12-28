@@ -8,7 +8,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   position: fixed;
-  background-color: #152028;
+  background-color: rosybrown;
   overflow: auto;
   top:0;
   width: 100%;
@@ -29,7 +29,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(27, 95, 117);
+  background-color: pink;
   color: black;
 }
 
