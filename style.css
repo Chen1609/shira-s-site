@@ -126,7 +126,7 @@ animation-duration: 0.65s;
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  background-color: #333;
+  background-color: #808080;
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -137,7 +137,7 @@ input[type=text], select, textarea {
 input[type=email]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    background-color: #333;
+    background-color: #808080;
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
