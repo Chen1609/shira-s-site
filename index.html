@@ -49,6 +49,39 @@
 <p style="color:darkslategrey;font-size:150%;">
   שירה "טומי" בן הרוש, נולדה ב-15.10.2002. אחות של שחף ובת של פזית לוי ואלי בן הרוש (כן כן גרושים זה מה יש). גרה ביבנה (לא ממליץ ללכת אין מה לעשות שם - תומכת).משרתת במוס....אההה חיל האוויר. מתחילה בקרוב תואר בפסיכולוגיה באוניברסיטה הפתוחה (נרשמה היום -💁‍♀). חברה טובה של לין עוד מהתיכון כשהן היו רבות ברדיו על שטויות. (זה עוד כלום) לא הלכה למגמת ריקוד כי היא לא רוקדת אז במקום היא עשתה פסיכולוגיה ותקשורת (!). כיום שירה בקבע בתפקיד "אב בית" של בסיס חפץ חיים ומדי פעם כשהיא חוזרת הביתה היא הולכת למקומות עם איזה הודי שהיא מכירה (חושד שהיא אוהבת הודים) .
 </p>
+<!-- Display the countdown timer in an element -->
+<p id="demo">כמה זמן עד ששירה טסה:</p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 12, 2023 21:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </section>
 
 <section id="photos" class="section">
