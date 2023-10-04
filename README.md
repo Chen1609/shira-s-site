@@ -1,6 +1,5 @@
 שם: חן קוללי
 </br>
-תז: 314943671
 </br>
 קישור לאתר:
 https://chen1609.github.io/shira-s-site/

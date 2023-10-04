@@ -2,6 +2,7 @@
 <html dir ="rtl">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="confetti.js"></script>
 <title>
   Shira's Site
 </title>
@@ -122,6 +123,47 @@ var x = setInterval(function() {
 </script>
 </container>
 <br/>
+
+ <!-- Trigger/Open The Modal -->
+ <!--<button id="myBtn">Open Modal</button> -->
+
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+ 
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <p style="font-size:500%;color:white;text-align:center;">היום יש לשירה יום הולדת!</p>
+   </div>
+ 
+ </div> 
+
+ <script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+const body = document.querySelector('body');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+body.onload = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+ </script>
 <br/>
 </section>
 <div class="center">
@@ -226,7 +268,7 @@ $(function(){
 <script type="text/javascript">
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
- });​
+ });
  </script>
 </body>
 </html>
