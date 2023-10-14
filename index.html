@@ -16,12 +16,12 @@
       margin: 0;
   }
   .fit { /* set relative picture size */
-      max-width: 25%;
+    max-width: 25%;
       max-height: 25%;
   }
   .center {
-      display: block;
-      margin: auto;
+    display: block;
+    margin: auto;
   }
 </style>
 </head>
@@ -36,8 +36,8 @@
     <a href="#like">תנו בלייק</a>
     <a href="#contact">צרו קשר</a>
     </div>
-</div>
-<section id="about" class="section">
+  </div>
+  <section id="about" class="section">
 <br/>
 <br/>
 <br/>
@@ -45,7 +45,7 @@
 <br/>
 <br/>
 <h1 class="decorated" style="color:darkslategrey;font-size:200%;">
-<span>קצת עליי:</span>
+  <span>קצת עליי:</span>
 </h1>
 <br/>
 <p style="color:darkslategrey;font-size:150%;">
@@ -54,15 +54,15 @@
 <!--<container style="display: inline-block;">
   <p style="color:darkslategrey;font-size:250%;">כמה זמן עד ששירה תפגוש את חבר שלה:</p>
   <!-- Display the countdown timer in an element --
-<p id="demo" style="color:darkslategrey;font-size:250%;"></p>
+    <p id="demo" style="color:darkslategrey;font-size:250%;"></p>
 
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Feb 26, 2023 13:00:00").getTime();
-
-  // Update the count down every 1 second
-var x = setInterval(function() {
-
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Feb 26, 2023 13:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+        
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -98,6 +98,7 @@ var x = setInterval(function() {
   <h1 class="decorated" style="color:darkslategrey;font-size:200%;">
     <span>תמונות שלי</span>
   </h1>
+  <button onclick="startConfetti();" class="btn btn-danger">Start</button>
   <container class="images" style="display: flex;">
     <br/>
     <img class="center fit" src="src/selfie.jpg"/>
@@ -105,7 +106,7 @@ var x = setInterval(function() {
     <script type="text/javascript" language="JavaScript">
       function set_body_height() { // set body height = window height
         $('body').height($(window).height());
-    }
+      }
     $(document).ready(function() {
         $(window).bind('resize', set_body_height);
         set_body_height();
@@ -149,10 +150,10 @@ const body = document.querySelector('body');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+const audio = document.getElementById("audio");
 // When the user clicks on the button, open the modal
 body.onload = function() {
   modal.style.display = "block";
-  const audio = document.getElementById("audio");
   audio.play();
   startConfetti();
 }
