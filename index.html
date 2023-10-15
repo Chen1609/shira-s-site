@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="confetti.js"></script>
-<audio src="src/happy_birthday.mp3"></audio>
+<audio autoplay src="src/happy_birthday.mp3"></audio>
 <title>
   Shira's Site
 </title>
@@ -156,8 +156,8 @@ const audio = document.getElementById("audio");
 // When the user clicks on the button, open the modal
 body.onload = function() {
   modal.style.display = "block";
+  audio.play();
 }
-audio.play();
 startConfetti();
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
